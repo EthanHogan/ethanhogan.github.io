@@ -1,0 +1,150 @@
+/*style sheet*/
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Heebo ExtraBold'), local('Heebo-ExtraBold'), url(https://fonts.gstatic.com/s/heebo/v4/NGS3v5_NC0k9P9lRa6RMkK4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+* {
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: rgb(37, 34, 31);
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	font-family: "Karla", sans-serif;
+}
+
+nav {
+}
+
+ul {
+	display: flex;
+}
+
+nav li {
+
+}
+
+.navlist {
+	list-style: none;
+	padding: 0px 15px;
+	transition: all 0.3s;
+}
+
+.navlist:hover {
+	transform: scale(1.1);
+}
+
+.navlist a {
+	text-decoration: none;
+	color: white;
+}
+
+.navlist a:hover {
+	color: red;
+	font-weight: bold;
+	border-top: 5px solid red;
+	padding-top: 20px;	
+}
+
+.home {
+	font-weight: bold;	
+}
+.logo {
+	margin-left: 30px;
+	color: white;
+}
+
+body {
+	background-color: rgba(37, 34, 31, 0.94);
+	background-size: cover;
+}
+
+
+.greeting {
+	text-align: left;
+	height: 582px;
+	display: flex;
+	font-size: 25px;
+	font-family: 'Heebo';
+	background-color: red;
+	justify-content: center;
+	align-items: center;
+} 
+.greeting h1 {
+	color: white;
+	transition: all 0.5s;
+}
+
+.greeting h1:hover {
+	transform: scale(1.1);
+}
+
+.social {
+	height: 400px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container img {
+	height: 200px;
+	width: 200px;
+	transition: all 0.5s;
+}
+
+.container img:hover {
+	transform: scale(1.1);
+}
+
+footer {
+	background-color: rgb(37, 34, 31);
+	height: 100px;
+	color: black;
+	text-align: center;
+}
+
+footer h1 {
+	padding-top: 35px;
+	color: white;
+	font-family: Karla;
+	font-size: 25px;
+}
+footer a {
+	text-decoration: none;
+}
+
+/*background-image: url(images/bodybackground.jpg);
+
+
+padding: 0px 100px;
+	margin: 100px 0px 100px 250px;
+
+
+	.container {
+	display: inline-block;
+	height: 75%;
+	width: 20%;
+	margin: 45px 0px 0px 20px;
+}
+
+	*/
