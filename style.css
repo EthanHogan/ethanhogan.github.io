@@ -75,6 +75,7 @@ nav li {
 body {
 	background-color: rgba(37, 34, 31, 0.94);
 	background-size: cover;
+	flex: 1 0 auto;
 }
 
 
@@ -121,6 +122,7 @@ footer {
 	height: 100px;
 	color: black;
 	text-align: center;
+	flex-shrink: 0;
 }
 
 footer h1 {
