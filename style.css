@@ -1,78 +1,71 @@
 /*style sheet*/
 /* latin */
 @font-face {
-	font-family: 'Karla';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  /* latin */
-  @font-face {
-	font-family: 'Heebo';
-	font-style: normal;
-	font-weight: 800;
-	src: local('Heebo ExtraBold'), local('Heebo-ExtraBold'), url(https://fonts.gstatic.com/s/heebo/v4/NGS3v5_NC0k9P9lRa6RMkK4.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karla'), local('Karla-Regular'), url(https://fonts.gstatic.com/s/karla/v7/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Heebo ExtraBold'), local('Heebo-ExtraBold'), url(https://fonts.gstatic.com/s/heebo/v4/NGS3v5_NC0k9P9lRa6RMkK4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 * {
-	  color: white;
-	  margin: 0;
-	  padding: 0;
+	color: white;
+	margin: 0;
+	padding: 0;
 }
 
-body {
-	background-color: rgba(37, 34, 31, 0.94);
-	background-size: cover;
-	flex: 1 0 auto;
-}
- 
-
-/*----------- navigation bar----------- */
 header {
-	  background-color: rgb(37, 34, 31);
-	  height: 75px;
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  flex-wrap: wrap;
-	  font-family: "Karla", sans-serif;
+	background-color: rgb(37, 34, 31);
+	height: 12vh;
+	min-height: 47px;
+	max-height: 160px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	font-family: "Karla", sans-serif;
 }
-  
-nav {
 
+nav {
 }
-  
+
 ul {
 	display: flex;
 }
-  
+
 nav li {
-  
+
 }
-  
+
 .navlist {
 	list-style: none;
 	padding: 0px 15px;
 	transition: all 0.3s;
 }
-  
+
 .navlist:hover {
 	transform: scale(1.1);
 }
-  
+
 .navlist a {
 	text-decoration: none;
 	color: white;
 }
-  
+
 .navlist a:hover {
 	color: red;
 	font-weight: bold;
 	border-top: 5px solid red;
 	padding-top: 20px;	
 }
-  
+
 .home {
 	font-weight: bold;	
 }
@@ -80,63 +73,61 @@ nav li {
 	margin-left: 30px;
 	color: white;
 }
-/*-----------end navigation bar-----------*/
 
-
-/*-----------main container-----------*/
-main {
-
+body {
+	background-color: rgba(37, 34, 31, 0.94);
+	background-size: cover;
 }
+
+
 .greeting {
-	text-align: left;
-	height: 582px;
+	text-align: center;
+	height: 88vh; 
 	display: flex;
-	font-size: 25px;
+	font-size: calc(20px + 1vw);
 	font-family: 'Heebo';
 	background-color: red;
 	justify-content: center;
 	align-items: center;
 } 
-
 .greeting h1 {
 	color: white;
 	transition: all 0.5s;
 }
-  
+
 .greeting h1:hover {
 	transform: scale(1.1);
 }
-  
+
 .social {
-	height: 400px;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
 }
-  
-.container img {
-	height: 200px;
-	width: 200px;
+
+img {
+	height: 20vw;
+	width: 20vw;
+	min-height: 150px;
+	min-width: 150px;
 	transition: all 0.5s;
+	margin: 30px 10px;
 }
-  
+
 .container img:hover {
 	transform: scale(1.1);
 }
-  /*-----------end main container-----------*/
 
-
-  /*-----------footer-----------*/
 footer {
+
 	background-color: rgb(37, 34, 31);
 	height: 100px;
 	color: black;
 	text-align: center;
-	flex-shrink: 0;
 }
-  
+
 footer h1 {
 	padding-top: 35px;
 	color: white;
@@ -146,4 +137,3 @@ footer h1 {
 footer a {
 	text-decoration: none;
 }
-  /*-----------end footer-----------*/
